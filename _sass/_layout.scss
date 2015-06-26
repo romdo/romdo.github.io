@@ -1,0 +1,184 @@
+/**
+ * Site header
+ */
+.site-header {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  text-align: center;
+  width: 300px;
+
+  .content {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+  }
+}
+
+.site-title {
+  font-size: 45px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+
+  &,
+  &:visited {
+    color: $grey-color-dark;
+  }
+}
+
+.site-description {
+  font-size: 14px;
+  color: $sub-text-color;
+}
+
+.site-links {
+  list-style: none;
+  font-size: 20px;
+
+  a {
+    color: $sub-text-color;
+    position: relative;
+    padding: 0px 2px;
+
+    span {
+      visibility: hidden;
+      opacity: 0;
+      font-size: $base-font-size;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      -webkit-transform: translate(-50%, 0%);
+    }
+    &:hover {
+      color: $sub-text2-color;
+      text-decoration: none;
+
+      span {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/**
+ * Site footer
+ */
+.site-footer {
+  padding: $spacing-unit 0;
+}
+
+
+/* .footer-col-wrapper { */
+/*   font-size: 15px; */
+/*   color: $grey-color; */
+/*   margin-left: -$spacing-unit / 2; */
+/*   @extend %clearfix; */
+/* } */
+
+/* .footer-col { */
+/*   float: left; */
+/*   margin-bottom: $spacing-unit / 2; */
+/*   padding-left: $spacing-unit / 2; */
+/* } */
+
+/* .footer-col-1 { */
+/*   width: -webkit-calc(35% - (#{$spacing-unit} / 2)); */
+/*   width:         calc(35% - (#{$spacing-unit} / 2)); */
+/* } */
+
+/* .footer-col-2 { */
+/*   width: -webkit-calc(20% - (#{$spacing-unit} / 2)); */
+/*   width:         calc(20% - (#{$spacing-unit} / 2)); */
+/* } */
+
+/* .footer-col-3 { */
+/*   width: -webkit-calc(45% - (#{$spacing-unit} / 2)); */
+/*   width:         calc(45% - (#{$spacing-unit} / 2)); */
+/* } */
+
+/* @include media-query($on-laptop) { */
+/*   .footer-col-1, */
+/*   .footer-col-2 { */
+/*     width: -webkit-calc(50% - (#{$spacing-unit} / 2)); */
+/*     width:         calc(50% - (#{$spacing-unit} / 2)); */
+/*   } */
+
+/*   .footer-col-3 { */
+/*     width: -webkit-calc(100% - (#{$spacing-unit} / 2)); */
+/*     width:         calc(100% - (#{$spacing-unit} / 2)); */
+/*   } */
+/* } */
+
+/* @include media-query($on-palm) { */
+/*   .footer-col { */
+/*     float: none; */
+/*     width: -webkit-calc(100% - (#{$spacing-unit} / 2)); */
+/*     width:         calc(100% - (#{$spacing-unit} / 2)); */
+/*   } */
+/* } */
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+  padding: $spacing-unit 0;
+}
+
+.page-heading {
+  font-size: 20px;
+}
+
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    font-size: 36px;
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h2 {
+    font-size: 32px;
+
+    @include media-query($on-laptop) {
+      font-size: 28px;
+    }
+  }
+
+  h3 {
+    font-size: 26px;
+
+    @include media-query($on-laptop) {
+      font-size: 22px;
+    }
+  }
+
+  h4 {
+    font-size: 20px;
+
+    @include media-query($on-laptop) {
+      font-size: 18px;
+    }
+  }
+}

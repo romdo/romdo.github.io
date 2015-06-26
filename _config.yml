@@ -1,0 +1,13 @@
+# Site settings
+title: romdo
+email: contact@romdo.io
+description: > # this means to ignore newlines until "baseurl:"
+  A podcast about gaming & technology by a bunch of crazy programmers/gamers.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://romdo.io" # the base hostname & protocol for your site
+rss_url: "http://feeds.romdo.io/podcast.rss"
+twitter_username: romdo_io
+github_username: romdo-io
+
+# Build settings
+markdown: kramdown
