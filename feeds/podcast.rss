@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <atom:link href="http://romdo.io/feeds/podcast.rss" rel="self" type="application/rss+xml"/>
+    <title>romdo</title>
+    <link>http://romdo.io</link>
+    <pubDate>Sat, 27 Jun 2015 00:40:51 +0000</pubDate>
+    <lastBuildDate>Sat, 27 Jun 2015 00:40:51 +0000</lastBuildDate>
+    <ttl>60</ttl>
+    <language>en</language>
+    <copyright>All rights reserved</copyright>
+    <webMaster>feeds@soundcloud.com (SoundCloud Feeds)</webMaster>
+    <description>A podcast about gaming &amp; technology by a bunch of crazy programmers/gamers.</description>
+    <itunes:subtitle>A podcast about gaming &amp; technology by a bunch of…</itunes:subtitle>
+    <itunes:owner>
+      <itunes:name>romdo</itunes:name>
+      <itunes:email>feeds@soundcloud.com</itunes:email>
+    </itunes:owner>
+    <itunes:author>romdo</itunes:author>
+    <itunes:explicit>yes</itunes:explicit>
+    <itunes:image href="http://i1.sndcdn.com/avatars-000149967508-56xcg0-original.png"/>
+    <image>
+      <url>http://i1.sndcdn.com/avatars-000149967508-56xcg0-original.png</url>
+      <title>romdo</title>
+      <link>http://romdo.io</link>
+    </image>
+    <itunes:category text="Games &amp; Hobbies"/>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/212158712</guid>
+      <title>Episode 0: Five Minutes of Test Silence</title>
+      <pubDate>Sat, 27 Jun 2015 00:09:14 +0000</pubDate>
+      <link>https://soundcloud.com/romdo-io/episode-0-five-minutes-of-test-silence</link>
+      <itunes:duration>00:05:00</itunes:duration>
+      <itunes:author>romdo</itunes:author>
+      <itunes:explicit>yes</itunes:explicit>
+      <itunes:summary>This is a test. Don't take it too seriously.
+
+Seriously, it's just a test. And it will be deleted.</itunes:summary>
+      <itunes:subtitle>This is a test. Don't take it too seriously.
+
+Ser…</itunes:subtitle>
+      <description>This is a test. Don't take it too seriously.
+
+Seriously, it's just a test. And it will be deleted.</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/212158712-romdo-io-episode-0-five-minutes-of-test-silence.mp3" length="4800811"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000149967508-56xcg0-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/212158713</guid>
+      <title>Episode 1: Five Minutes of Test Silence</title>
+      <pubDate>Sat, 27 Jun 2015 00:09:14 +0000</pubDate>
+      <link>https://soundcloud.com/romdo-io/episode-1-five-minutes-of-test-silence</link>
+      <itunes:duration>00:05:00</itunes:duration>
+      <itunes:author>romdo</itunes:author>
+      <itunes:explicit>yes</itunes:explicit>
+      <itunes:summary>This is a test. Don't take it too seriously.
+
+Seriously, it's just a test. And it will be deleted.</itunes:summary>
+      <itunes:subtitle>This is a test. Don't take it too seriously.
+
+Ser…</itunes:subtitle>
+      <description>This is a test. Don't take it too seriously.
+
+Seriously, it's just a test. And it will be deleted.</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/212158712-romdo-io-episode-0-five-minutes-of-test-silence.mp3" length="4800811"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000149967508-56xcg0-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/212158714</guid>
+      <title>Episode 2: Five Minutes of Test Silence</title>
+      <pubDate>Sat, 27 Jun 2015 00:09:14 +0000</pubDate>
+      <link>https://soundcloud.com/romdo-io/episode-2-five-minutes-of-test-silence</link>
+      <itunes:duration>00:05:00</itunes:duration>
+      <itunes:author>romdo</itunes:author>
+      <itunes:explicit>yes</itunes:explicit>
+      <itunes:summary>This is a test. Don't take it too seriously.
+
+Seriously, it's just a test. And it will be deleted.</itunes:summary>
+      <itunes:subtitle>This is a test. Don't take it too seriously.
+
+Ser…</itunes:subtitle>
+      <description>This is a test. Don't take it too seriously.
+
+Seriously, it's just a test. And it will be deleted.</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/212158712-romdo-io-episode-0-five-minutes-of-test-silence.mp3" length="4800811"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000149967508-56xcg0-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/212158715</guid>
+      <title>Episode 3: Five Minutes of Test Silence</title>
+      <pubDate>Sat, 27 Jun 2015 00:09:14 +0000</pubDate>
+      <link>https://soundcloud.com/romdo-io/episode-3-five-minutes-of-test-silence</link>
+      <itunes:duration>00:05:00</itunes:duration>
+      <itunes:author>romdo</itunes:author>
+      <itunes:explicit>yes</itunes:explicit>
+      <itunes:summary>This is a test. Don't take it too seriously.
+
+Seriously, it's just a test. And it will be deleted.</itunes:summary>
+      <itunes:subtitle>This is a test. Don't take it too seriously.
+
+Ser…</itunes:subtitle>
+      <description>This is a test. Don't take it too seriously.
+
+Seriously, it's just a test. And it will be deleted.</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/212158712-romdo-io-episode-0-five-minutes-of-test-silence.mp3" length="4800811"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000149967508-56xcg0-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/212158716</guid>
+      <title>Episode 4: Five Minutes of Test Silence</title>
+      <pubDate>Sat, 27 Jun 2015 00:09:14 +0000</pubDate>
+      <link>https://soundcloud.com/romdo-io/episode-4-five-minutes-of-test-silence</link>
+      <itunes:duration>00:05:00</itunes:duration>
+      <itunes:author>romdo</itunes:author>
+      <itunes:explicit>yes</itunes:explicit>
+      <itunes:summary>This is a test. Don't take it too seriously.
+
+Seriously, it's just a test. And it will be deleted.</itunes:summary>
+      <itunes:subtitle>This is a test. Don't take it too seriously.
+
+Ser…</itunes:subtitle>
+      <description>This is a test. Don't take it too seriously.
+
+Seriously, it's just a test. And it will be deleted.</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/212158712-romdo-io-episode-0-five-minutes-of-test-silence.mp3" length="4800811"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000149967508-56xcg0-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/212158717</guid>
+      <title>Episode 5: Five Minutes of Test Silence</title>
+      <pubDate>Sat, 27 Jun 2015 00:09:14 +0000</pubDate>
+      <link>https://soundcloud.com/romdo-io/episode-5-five-minutes-of-test-silence</link>
+      <itunes:duration>00:05:00</itunes:duration>
+      <itunes:author>romdo</itunes:author>
+      <itunes:explicit>yes</itunes:explicit>
+      <itunes:summary>This is a test. Don't take it too seriously.
+
+Seriously, it's just a test. And it will be deleted.</itunes:summary>
+      <itunes:subtitle>This is a test. Don't take it too seriously.
+
+Ser…</itunes:subtitle>
+      <description>This is a test. Don't take it too seriously.
+
+Seriously, it's just a test. And it will be deleted.</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/212158712-romdo-io-episode-0-five-minutes-of-test-silence.mp3" length="4800811"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000149967508-56xcg0-original.png"/>
+    </item>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/212158718</guid>
+      <title>Episode 6: Five Minutes of Test Silence</title>
+      <pubDate>Sat, 27 Jun 2015 00:09:14 +0000</pubDate>
+      <link>https://soundcloud.com/romdo-io/episode-6-five-minutes-of-test-silence</link>
+      <itunes:duration>00:05:00</itunes:duration>
+      <itunes:author>romdo</itunes:author>
+      <itunes:explicit>yes</itunes:explicit>
+      <itunes:summary>This is a test. Don't take it too seriously.
+
+Seriously, it's just a test. And it will be deleted.</itunes:summary>
+      <itunes:subtitle>This is a test. Don't take it too seriously.
+
+Ser…</itunes:subtitle>
+      <description>This is a test. Don't take it too seriously.
+
+Seriously, it's just a test. And it will be deleted.</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/212158712-romdo-io-episode-0-five-minutes-of-test-silence.mp3" length="4800811"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000149967508-56xcg0-original.png"/>
+    </item>
+  </channel>
+</rss>
