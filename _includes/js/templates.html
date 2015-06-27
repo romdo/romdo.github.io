@@ -2,13 +2,15 @@
   <h2><a href="#<%= model.get("slug") %>"><%= model.get("title") %></a></h2>
   <ul class="info">
     <li class="date">
-      <%= model.formattedDate() %>
+      <i class="fa fa-calendar"></i> <%= model.formattedDate() %>
     </li>
     <li class="download">
-      <a href="<%= model.get("media_url") %>">Download</a>
+      <a href="<%= model.get("media_url") %>">
+        <i class="fa fa-download"></i> Download
+      </a>
     </li>
     <li class="duration">
-      Duration: <%= model.get("duration") %>
+      <i class="fa fa-clock-o"></i> <%= model.get("duration") %>
     </li>
   </ul>
 
