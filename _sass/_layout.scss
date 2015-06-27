@@ -16,6 +16,19 @@
     transform: translate(0%, -50%);
     -webkit-transform: translate(0%, -50%);
   }
+  @include media-query($on-palm) {
+    margin-top: 20px;
+    position: static;
+    width: 100%;
+    top: auto;
+    bottom: auto;
+    .content {
+      position: static;
+      top: auto;
+      transform: none;
+      -webkit-transition: none;
+    }
+  }
 }
 
 .site-title {
@@ -36,6 +49,7 @@
 
 .site-description {
   font-size: 14px;
+  margin-bottom: 9px;
   color: $sub-text-color;
 }
 
@@ -85,61 +99,18 @@
   padding: $spacing-unit 0;
 }
 
-
-/* .footer-col-wrapper { */
-/*   font-size: 15px; */
-/*   color: $grey-color; */
-/*   margin-left: -$spacing-unit / 2; */
-/*   @extend %clearfix; */
-/* } */
-
-/* .footer-col { */
-/*   float: left; */
-/*   margin-bottom: $spacing-unit / 2; */
-/*   padding-left: $spacing-unit / 2; */
-/* } */
-
-/* .footer-col-1 { */
-/*   width: -webkit-calc(35% - (#{$spacing-unit} / 2)); */
-/*   width:         calc(35% - (#{$spacing-unit} / 2)); */
-/* } */
-
-/* .footer-col-2 { */
-/*   width: -webkit-calc(20% - (#{$spacing-unit} / 2)); */
-/*   width:         calc(20% - (#{$spacing-unit} / 2)); */
-/* } */
-
-/* .footer-col-3 { */
-/*   width: -webkit-calc(45% - (#{$spacing-unit} / 2)); */
-/*   width:         calc(45% - (#{$spacing-unit} / 2)); */
-/* } */
-
-/* @include media-query($on-laptop) { */
-/*   .footer-col-1, */
-/*   .footer-col-2 { */
-/*     width: -webkit-calc(50% - (#{$spacing-unit} / 2)); */
-/*     width:         calc(50% - (#{$spacing-unit} / 2)); */
-/*   } */
-
-/*   .footer-col-3 { */
-/*     width: -webkit-calc(100% - (#{$spacing-unit} / 2)); */
-/*     width:         calc(100% - (#{$spacing-unit} / 2)); */
-/*   } */
-/* } */
-
-/* @include media-query($on-palm) { */
-/*   .footer-col { */
-/*     float: none; */
-/*     width: -webkit-calc(100% - (#{$spacing-unit} / 2)); */
-/*     width:         calc(100% - (#{$spacing-unit} / 2)); */
-/*   } */
-/* } */
-
-
-
 /**
  * Page content
  */
+.page-content {
+  margin-left: $sidebar-width;
+  padding: $spacing-unit 0 $spacing-unit $spacing-unit / 2;
+  @include media-query($on-palm) {
+    margin-left: 0;
+    padding: $spacing-unit / 2 0 $spacing-unit 0;
+  }
+}
+
 .episode-item {
   margin-bottom: 30px;
 
@@ -185,15 +156,6 @@
   .description {
     margin-top: 5px;
   }
-}
-
-.page-content {
-  margin-left: $sidebar-width;
-  padding: $spacing-unit 0 $spacing-unit $spacing-unit / 2;
-}
-
-.page-heading {
-  font-size: 20px;
 }
 
 
