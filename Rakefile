@@ -5,14 +5,11 @@ desc "Update feeds/podcast.rss"
 task :update_rss do
   conf = YAML.load_file("_config.yml")
 
-  local_rss_url  = conf["url"] + conf["rss_path"]
-  remote_rss_url = conf["remote_rss_url"]
+  response = http_get(conf["rss_url"])
 
-  response = http_get(remote_rss_url)
-
-  doc = Nokogiri::XML(response.body)
-  doc.at_css("channel > atom|link[rel='self']")[:href] = local_rss_url
-  File.open(conf["local_rss_path"], "w") { |f| f.write(doc.to_s) }
+  File.open(conf["rss_path"], "w") do |f|
+    f.write(response.body)
+  end
 end
 
 
