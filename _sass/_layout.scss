@@ -55,7 +55,7 @@
 
 .site-links {
   list-style: none;
-  font-size: 20px;
+  font-size: 22px;
 
   a {
     color: $sub-text-color;
@@ -67,7 +67,7 @@
       opacity: 0;
       font-size: $base-font-size;
       position: absolute;
-      top: 18px;
+      top: 20px;
       left: 50%;
       transform: translate(-50%, 0%);
       -o-transform: translate(-50%, 0%);
@@ -81,7 +81,7 @@
       span {
         visibility: visible;
         opacity: 1;
-        top: 23px;
+        top: 25px;
         transition: all .25s ease-out;
         -o-transition: all .25s ease-out;
         -ms-transition: all .25s ease-out;
@@ -153,8 +153,31 @@
       }
     }
   }
-  .description {
+  .description-wrapper {
     margin-top: 5px;
+    .description {
+      max-height: 200px;
+      overflow: hidden;
+    }
+
+    .toggle-more {
+      display: none;
+      position: relative;
+      margin-top: -40px;
+      padding-top: 40px;
+      text-align: center;
+
+      .fade {
+        position: absolute;
+        height: 40px;
+        width: 100%;
+        top: 0px;
+        background-image: linear-gradient(to bottom, transparent, white);
+      }
+      .less {
+        display: none;
+      }
+    }
   }
 }
 
