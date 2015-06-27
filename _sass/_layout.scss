@@ -167,6 +167,11 @@
       padding-top: 40px;
       text-align: center;
 
+      a, a:visited, a:hover {
+        color: $brand-color-dark;
+        text-decoration: none;
+      }
+
       .fade {
         position: absolute;
         height: 41px;
