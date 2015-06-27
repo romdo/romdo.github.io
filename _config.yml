@@ -9,5 +9,9 @@ rss_url: "http://feeds.romdo.io/podcast.rss"
 twitter_username: romdo_io
 github_username: romdo-io
 
+# Podcast RSS building settings
+remote_rss_url: http://feeds.soundcloud.com/users/soundcloud:users:157921153/sounds.rss
+local_rss_path: feeds/podcast.rss
+
 # Build settings
 markdown: kramdown
