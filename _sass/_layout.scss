@@ -2,13 +2,13 @@
  * Site header
  */
 .site-header {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: $heading-font-family;
   font-weight: bold;
   position: fixed;
   top: 0px;
   bottom: 0px;
   text-align: center;
-  width: 300px;
+  width: $sidebar-width;
 
   .content {
     position: absolute;
@@ -19,6 +19,7 @@
 }
 
 .site-title {
+  color: $grey-color-dark;
   font-size: 45px;
   line-height: 40px;
   letter-spacing: -1px;
@@ -26,8 +27,10 @@
   margin-bottom: 5px;
 
   &,
-  &:visited {
+  &:visited,
+  &:hover {
     color: $grey-color-dark;
+    text-decoration: none;
   }
 }
 
@@ -50,18 +53,26 @@
       opacity: 0;
       font-size: $base-font-size;
       position: absolute;
-      top: 20px;
+      top: 15px;
       left: 50%;
       transform: translate(-50%, 0%);
+      -o-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+      -moz-transform: translate(-50%, 0%);
       -webkit-transform: translate(-50%, 0%);
     }
     &:hover {
-      color: $sub-text2-color;
       text-decoration: none;
 
       span {
         visibility: visible;
         opacity: 1;
+        top: 20px;
+        transition: all .25s ease-out;
+        -o-transition: all .25s ease-out;
+        -ms-transition: all .25s ease-out;
+        -moz-transition: all .25s ease-out;
+        -webkit-transition: all .25s ease-out;
       }
     }
   }
@@ -129,8 +140,53 @@
 /**
  * Page content
  */
+.episode-item {
+  margin-bottom: 30px;
+
+  audio {
+    width: 100%;
+  }
+
+  h2 {
+    font-family: $heading-font-family;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0px;
+    a {
+      &,
+      &:visited {
+        color: $grey-color-dark;
+      }
+    }
+  }
+  .info {
+    font-family: $heading-font-family;
+    font-size: 13px;
+    font-weight: bold;
+    /* color: $grey-color-dark; */
+    color: $sub-text-color;
+    margin: 0 0 8px 0;
+    list-style: none;
+    @extend %clearfix;
+    li {
+      float: left;
+      margin: 0 15px 0 0;
+
+      &.duration,
+      &.download {
+        margin: 0 0 0 15px;
+        float: right
+      }
+    }
+  }
+  .description {
+    margin-top: 5px;
+  }
+}
+
 .page-content {
-  padding: $spacing-unit 0;
+  margin-left: $sidebar-width;
+  padding: $spacing-unit 0 $spacing-unit $spacing-unit / 2;
 }
 
 .page-heading {

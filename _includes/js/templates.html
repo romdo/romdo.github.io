@@ -1,0 +1,21 @@
+<script type="text/template" id="episode_item">
+  <h2><a href="#<%= model.get("slug") %>"><%= model.get("title") %></a></h2>
+  <ul class="info">
+    <li class="date">
+      <%= model.formattedDate() %>
+    </li>
+    <li class="download">
+      <a href="<%= model.get("media_url") %>">Download</a>
+    </li>
+    <li class="duration">
+      Duration: <%= model.get("duration") %>
+    </li>
+  </ul>
+
+  <audio src="<%= model.get("media_url") %>" preload="none" controls="controls">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="summary"><%= model.summary() %></div>
+  <div class="description"><%= model.description() %></div>
+</script>
