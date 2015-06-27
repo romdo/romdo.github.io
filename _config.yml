@@ -4,10 +4,11 @@ email: contact@romdo.io
 description: > # this means to ignore newlines until "baseurl:"
   A podcast about gaming & technology by a bunch of crazy programmers/gamers.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://romdo.io" # the base hostname & protocol for your site
-rss_url: "http://feeds.romdo.io/podcast.rss"
+url: http://romdo.io # the base hostname & protocol for your site
+rss_path: /feeds/podcast.rss
 twitter_username: romdo_io
 github_username: romdo-io
+soundcloud_username: romdo-io
 
 # Podcast RSS building settings
 remote_rss_url: http://feeds.soundcloud.com/users/soundcloud:users:157921153/sounds.rss
