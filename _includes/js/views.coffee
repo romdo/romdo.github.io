@@ -21,6 +21,13 @@ class EpisodeListView extends Support.CompositeView
 
     view.leave() if view?
 
+  # focus: (slug) =>
+  #   @activeFocus = slug
+
+  # unfocus: =>
+  #   @activeFocus = null
+  #   @collection.each (model) -> model.trigger("show")
+
 
 class EpisodeView extends Support.CompositeView
   className: "episode-item"
@@ -28,13 +35,10 @@ class EpisodeView extends Support.CompositeView
     @cachedTemplate ||= _.template($("#episode_item").html())
     @cachedTemplate(variables)
 
-  events:
-    "click .title a"       : "focus"
-    "click .toggle-more a" : "toggleMore"
-
   render: =>
     @$el.html(@template(model: @model))
-    setTimeout @renderShowMore, 1
+
+    # setTimeout @renderShowMore, 1
     this
 
   renderShowMore: =>
@@ -44,34 +48,15 @@ class EpisodeView extends Support.CompositeView
     return if container.height() >= content.height()
     @$(".toggle-more").show()
 
-  toggleMore: (evt) =>
-    evt.preventDefault()
+  # focus: =>
+  #   if slug == @model.get("slug")
+  #     @$el.hide()
+  #     false
+  #   else
+  #     true
 
-    if @$(".toggle-more .more").is(":visible")
-      @focus()
-    else
-      @unfocus()
+  # show: =>
+  #   @$el.show()
 
-  focus: =>
-    window.Router.navigate(@model.get("slug"))
-    return if @$(".toggle-more .less").is(":visible")
-
-    container = @$(".description")
-    content   = @$(".description-content")
-
-    container.animate "max-height": content.height()
-
-    @$(".toggle-more .fade").hide()
-    @$(".toggle-more .more").hide()
-    @$(".toggle-more .less").show()
-
-  unfocus: =>
-    window.Router.navigate("")
-    return if @$(".toggle-more .more").is(":visible")
-
-    container = @$(".description")
-    @$(".toggle-more .fade").show()
-    container.animate("max-height": "200px")
-
-    @$(".toggle-more .more").show()
-    @$(".toggle-more .less").hide()
+  # hide: =>
+  #   @$el.hide()

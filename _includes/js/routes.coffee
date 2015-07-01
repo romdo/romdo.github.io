@@ -1,7 +1,7 @@
 class Routes extends Backbone.Router
   routes:
-    ""      : "index"
-    ":slug" : "showEpisode"
+    ""    : "index"
+    # ":id" : "showEpisode"
 
   initialize: ->
     @episodes = new Episodes(url: window.rssPath)
@@ -9,8 +9,10 @@ class Routes extends Backbone.Router
     @listView = new EpisodeListView
       el: $("#episode_list")
       collection: @episodes
+    @listView.render()
 
   index: =>
+    # @listView.unfocus()
 
-  showEpisode: (slug) =>
-    console.log "showEpisode:", slug
+  # showEpisode: (id) =>
+  #   @listView.focus(id)
