@@ -10,6 +10,10 @@
   text-align: center;
   width: $sidebar-width;
 
+  a:hover {
+    text-decoration: none;
+  }
+
   .content {
     position: absolute;
     top: 50%;
@@ -29,7 +33,7 @@
   }
 }
 
-.site-avatar img {
+.site-avatar {
   width: 80px;
   height: 80px;
   margin-bottom: 4px;
@@ -42,6 +46,7 @@
   }
 }
 .site-title {
+  display: block;
   color: $grey-color-dark;
   font-size: 45px;
   line-height: 40px;
@@ -53,7 +58,6 @@
   &:visited,
   &:hover {
     color: $grey-color-dark;
-    text-decoration: none;
   }
 }
 
@@ -82,8 +86,6 @@
       @include transform(translate(-50%, 0%));
     }
     &:hover {
-      text-decoration: none;
-
       span {
         visibility: visible;
         opacity: 1;
