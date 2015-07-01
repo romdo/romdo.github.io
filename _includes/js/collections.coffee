@@ -15,15 +15,18 @@ class Episodes extends Backbone.Collection
   _parseItem: (elm) ->
     elm = $(elm)
 
-    guid      = elm.find('guid').text()
+    guidFull  = elm.find('guid').text()
+    guid      = guidFull.replace(/^.*\:tracks\/(\d+)$/, "$1")
     link      = elm.find("link").text()
+    slug      = link.replace(/.*\/(.+?)$/, "$1")
     enclosure = elm.find("enclosure")
+
     {
-      id: guid.replace(/^.*\:tracks\/(\d+)$/, "$1")
+      id: slug
       guid: guid
       title: elm.find("title").text()
       pubDate: elm.find("pubDate").text()
-      slug: link.replace(/.*\/(.+?)$/, "$1")
+      slug: slug
       link: link
       duration: elm.find("duration").text()
       summary: elm.find("summary").text()
