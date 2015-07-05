@@ -1,5 +1,7 @@
 require 'yaml'
 require 'nokogiri'
+require 'uri'
+require 'net/http'
 
 desc "Update feeds/podcast.rss"
 task :update_rss do

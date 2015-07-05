@@ -3,8 +3,8 @@
     <atom:link href="http://feeds.soundcloud.com/users/soundcloud:users:157921153/sounds.rss" rel="self" type="application/rss+xml"/>
     <title>romdo</title>
     <link>http://romdo.io</link>
-    <pubDate>Mon, 29 Jun 2015 19:12:25 +0000</pubDate>
-    <lastBuildDate>Mon, 29 Jun 2015 19:12:25 +0000</lastBuildDate>
+    <pubDate>Sun, 05 Jul 2015 23:01:25 +0000</pubDate>
+    <lastBuildDate>Sun, 05 Jul 2015 23:01:25 +0000</lastBuildDate>
     <ttl>60</ttl>
     <language>en</language>
     <copyright>All rights reserved</copyright>
@@ -17,34 +17,125 @@
     </itunes:owner>
     <itunes:author>romdo</itunes:author>
     <itunes:explicit>yes</itunes:explicit>
-    <itunes:image href="http://i1.sndcdn.com/avatars-000149967508-56xcg0-original.png"/>
+    <itunes:image href="http://i1.sndcdn.com/avatars-000152464601-5jln65-original.png"/>
     <image>
-      <url>http://i1.sndcdn.com/avatars-000149967508-56xcg0-original.png</url>
+      <url>http://i1.sndcdn.com/avatars-000152464601-5jln65-original.png</url>
       <title>romdo</title>
       <link>http://romdo.io</link>
     </image>
     <itunes:category text="Games &amp; Hobbies"/>
     <item>
-      <guid isPermaLink="false">tag:soundcloud,2010:tracks/212158712</guid>
-      <title>Episode 0: Five Minutes of Test Silence</title>
-      <pubDate>Sat, 27 Jun 2015 00:09:14 +0000</pubDate>
-      <link>https://soundcloud.com/romdo-io/episode-0-five-minutes-of-test-silence</link>
-      <itunes:duration>00:05:00</itunes:duration>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/213406691</guid>
+      <title>Episode 1 - The One About E3</title>
+      <pubDate>Sun, 05 Jul 2015 22:43:05 +0000</pubDate>
+      <link>https://soundcloud.com/romdo-io/episode-1-the-one-about-e3</link>
+      <itunes:duration>01:52:19</itunes:duration>
       <itunes:author>romdo</itunes:author>
       <itunes:explicit>yes</itunes:explicit>
-      <itunes:summary>This is a test. Don't take it too seriously. Seriously, it's just a test. And it will be deleted.
+      <itunes:summary>Romdo: Episode 1 - The one about E3
+http://romdo.io
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie, libero nec semper tempor, neque lectus vehicula est, id elementum enim est vitae felis. Fusce cursus, ex at laoreet posuere, metus quam iaculis ligula, sit amet gravida velit dui et enim. Fusce lacinia turpis in justo sollicitudin, eget sagittis justo lacinia. Nunc eros odio, feugiat quis mattis ac, cursus lacinia ante. Aliquam vestibulum id augue eget ultricies. Aliquam nec nibh in libero porta faucibus. Mauris convallis velit lorem, a malesuada turpis aliquam quis. Mauris eu vulputate ex. Maecenas efficitur, sapien eget rutrum venenatis, quam mi luctus orci, a placerat nibh mi non velit. Nullam dui urna, gravida ullamcorper convallis at, sodales nec odio. Nullam iaculis id massa sit amet ultrices. Ut mollis, eros tincidunt euismod sodales, mauris diam semper augue, eget vehicula justo nunc quis leo. Sed id lectus mattis, condimentum velit sit amet, egestas justo. Donec suscipit condimentum ligula ullamcorper pretium. In lacinia diam quis urna hendrerit gravida a id nisl. Phasellus ultricies varius vulputate.
+Panel
+ - Alex Reis http://twitter.com/alexmreis
+ - Eric Hartin http://twitter.com/fraeport
+ - Jim Myhrberg http://twitter.com/jimeh
 
-Cras placerat, nibh non rhoncus hendrerit, massa mi imperdiet augue, nec sollicitudin enim erat vel dui. In non dui in magna faucibus laoreet. Donec elementum ac quam quis auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla luctus non tellus at feugiat. Sed dui risus, dictum vel ornare ac, elementum vitae metus. Vivamus eu neque eget tellus venenatis rhoncus. Morbi et scelerisque orci. Vivamus nisi ex, auctor ac ipsum sit amet, malesuada congue erat. Nulla ac arcu dolor. Phasellus dapibus placerat turpis id luctus. Nullam ac ante suscipit dolor congue eleifend. Nulla urna sem, tristique sed augue sit amet, egestas mollis quam. Aenean lectus ipsum, aliquet in suscipit ac, pharetra sit amet sem. Phasellus ac varius ligula. Nulla semper malesuada lorem, vitae accumsan sem imperdiet at.</itunes:summary>
-      <itunes:subtitle>This is a test. Don't take it too seriously. Seri…</itunes:subtitle>
-      <description>This is a test. Don't take it too seriously. Seriously, it's just a test. And it will be deleted.
+Topics
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie, libero nec semper tempor, neque lectus vehicula est, id elementum enim est vitae felis. Fusce cursus, ex at laoreet posuere, metus quam iaculis ligula, sit amet gravida velit dui et enim. Fusce lacinia turpis in justo sollicitudin, eget sagittis justo lacinia. Nunc eros odio, feugiat quis mattis ac, cursus lacinia ante. Aliquam vestibulum id augue eget ultricies. Aliquam nec nibh in libero porta faucibus. Mauris convallis velit lorem, a malesuada turpis aliquam quis. Mauris eu vulputate ex. Maecenas efficitur, sapien eget rutrum venenatis, quam mi luctus orci, a placerat nibh mi non velit. Nullam dui urna, gravida ullamcorper convallis at, sodales nec odio. Nullam iaculis id massa sit amet ultrices. Ut mollis, eros tincidunt euismod sodales, mauris diam semper augue, eget vehicula justo nunc quis leo. Sed id lectus mattis, condimentum velit sit amet, egestas justo. Donec suscipit condimentum ligula ullamcorper pretium. In lacinia diam quis urna hendrerit gravida a id nisl. Phasellus ultricies varius vulputate.
+Overall topic this week is E3 and gaming in general. 
 
-Cras placerat, nibh non rhoncus hendrerit, massa mi imperdiet augue, nec sollicitudin enim erat vel dui. In non dui in magna faucibus laoreet. Donec elementum ac quam quis auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla luctus non tellus at feugiat. Sed dui risus, dictum vel ornare ac, elementum vitae metus. Vivamus eu neque eget tellus venenatis rhoncus. Morbi et scelerisque orci. Vivamus nisi ex, auctor ac ipsum sit amet, malesuada congue erat. Nulla ac arcu dolor. Phasellus dapibus placerat turpis id luctus. Nullam ac ante suscipit dolor congue eleifend. Nulla urna sem, tristique sed augue sit amet, egestas mollis quam. Aenean lectus ipsum, aliquet in suscipit ac, pharetra sit amet sem. Phasellus ac varius ligula. Nulla semper malesuada lorem, vitae accumsan sem imperdiet at.</description>
-      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/212158712-romdo-io-episode-0-five-minutes-of-test-silence.mp3" length="4800811"/>
-      <itunes:image href="http://i1.sndcdn.com/avatars-000149967508-56xcg0-original.png"/>
+- Introductions!
+- Nintendo World Champs
+- Sony's E3 Press Conferences
+  - The Last Guardian
+  -Final Fantasy 7 Remake
+  -Shenmue III
+  - Horizon: Zero Dawn
+  - Uncharted 4: A Thief's End
+
+- Microsoft's E3 Press Conference:
+  - Rare Replay
+  - Sea of Thieves
+  - Xbox 360 backwards compatibility on Xbox One
+  - HoloLens Minecraft
+
+- Square Enix’s E3 Press Conference:
+  - Kingdom Hearts 3
+
+- EA’s E3 Press Conference:
+  - Unravel
+  - Bethesda’s E3 Press Conference:
+  - Fallout 4, especially it's insanely ambitious crafting system
+
+- Ubisoft’s E3 Press Conference:
+  - The Division
+
+- Nintendo's E3 Press Conference:
+ - Star Fox
+ - Lack of WiiU Zelda
+
+- Eric gushes about Street Fighter V
+- Old E3 vaporware
+ - Commander Keen (pre e3)
+  - The Last Guardian (already listed above)
+  - Eyedentify
+- Our return to Final Fantasy XIV
+
+</itunes:summary>
+      <itunes:subtitle>Romdo: Episode 1 - The one about E3
+http://romdo.…</itunes:subtitle>
+      <description>Romdo: Episode 1 - The one about E3
+http://romdo.io
+
+Panel
+ - Alex Reis http://twitter.com/alexmreis
+ - Eric Hartin http://twitter.com/fraeport
+ - Jim Myhrberg http://twitter.com/jimeh
+
+Topics
+
+Overall topic this week is E3 and gaming in general. 
+
+- Introductions!
+- Nintendo World Champs
+- Sony's E3 Press Conferences
+  - The Last Guardian
+  -Final Fantasy 7 Remake
+  -Shenmue III
+  - Horizon: Zero Dawn
+  - Uncharted 4: A Thief's End
+
+- Microsoft's E3 Press Conference:
+  - Rare Replay
+  - Sea of Thieves
+  - Xbox 360 backwards compatibility on Xbox One
+  - HoloLens Minecraft
+
+- Square Enix’s E3 Press Conference:
+  - Kingdom Hearts 3
+
+- EA’s E3 Press Conference:
+  - Unravel
+  - Bethesda’s E3 Press Conference:
+  - Fallout 4, especially it's insanely ambitious crafting system
+
+- Ubisoft’s E3 Press Conference:
+  - The Division
+
+- Nintendo's E3 Press Conference:
+ - Star Fox
+ - Lack of WiiU Zelda
+
+- Eric gushes about Street Fighter V
+- Old E3 vaporware
+ - Commander Keen (pre e3)
+  - The Last Guardian (already listed above)
+  - Eyedentify
+- Our return to Final Fantasy XIV
+
+</description>
+      <enclosure type="audio/mpeg" url="http://www.podtrac.com/pts/redirect.mp3/feeds.soundcloud.com/stream/213406691-romdo-io-episode-1-the-one-about-e3.mp3" length="269562774"/>
+      <itunes:image href="http://i1.sndcdn.com/avatars-000152464601-5jln65-original.png"/>
     </item>
   </channel>
 </rss>
