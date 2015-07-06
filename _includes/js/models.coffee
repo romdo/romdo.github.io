@@ -5,7 +5,15 @@ class Episode extends Backbone.Model
     moment(@get("pubDate"), format).format('MMMM Do, YYYY')
 
   description: =>
-    @get("description").replace(/\n/g, "<br />")
+    @_autolink(@get("description").replace(/\n/g, "<br />"))
 
   summary: =>
     @get("description").replace("\n", "")
+
+  _autolink: (str) =>
+    @cachedAutolinker ||= new Autolinker
+      twitter: false
+      hashtag: false
+      phone: false
+
+    @cachedAutolinker.link(str)
