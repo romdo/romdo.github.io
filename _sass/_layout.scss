@@ -76,7 +76,7 @@
     position: relative;
     padding: 0px 2px;
 
-    span {
+    .link-text {
       visibility: hidden;
       opacity: 0;
       font-size: $base-font-size;
@@ -86,13 +86,25 @@
       @include transform(translate(-50%, 0%));
     }
     &:hover {
-      span {
+      .link-text {
         visibility: visible;
         opacity: 1;
         top: 25px;
         @include transition(all .25s ease-out);
       }
     }
+  }
+}
+
+.fa-itunes {
+  height: 1em;
+  width: 1em;
+  line-height: 1em;
+  margin-top: -2px;
+
+  .fa-music {
+    font-size: 0.5em;
+    margin-left: -0.05em;
   }
 }
 

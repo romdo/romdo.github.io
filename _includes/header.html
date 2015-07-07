@@ -7,13 +7,19 @@
     <p class="site-description">{{ site.description }}</p>
     <div class="site-links">
       <a href="{{ site.rss_url }}">
-        <i class="fa fa-rss"></i><span>rss</span>
+        <i class="fa fa-rss"></i><span class="link-text">rss</span>
+      </a><a href="{{ site.itunes_url }}">
+        <span class="fa-stack fa-itunes">
+          <i class="fa fa-circle-thin fa-stack-1x"></i>
+          <i class="fa fa-music fa-stack-1x"></i>
+        </span>
+        <span class="link-text">itunes</span>
       </a><a href="https://twitter.com/{{ site.twitter_username }}">
-        <i class="fa fa-twitter"></i><span>twitter</span>
+        <i class="fa fa-twitter"></i><span class="link-text">twitter</span>
       </a><a href="https://github.com/{{ site.github_username }}">
-        <i class="fa fa-github"></i><span>github</span>
+        <i class="fa fa-github"></i><span class="link-text">github</span>
       </a><a href="https://soundcloud.com/{{ site.soundcloud_username }}">
-        <i class="fa fa-soundcloud"></i><span>soundcloud</span>
+        <i class="fa fa-soundcloud"></i><span class="link-text">soundcloud</span>
       </a>
     </div>
   </div>
