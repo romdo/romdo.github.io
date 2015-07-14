@@ -172,9 +172,14 @@
   }
   .description-wrapper {
     margin-top: 5px;
-    .description {
+
+    &.truncated .description {
       max-height: 230px;
       overflow: hidden;
+    }
+
+    &.truncated .toggle-more {
+      display: block;
     }
 
     .toggle-more {
