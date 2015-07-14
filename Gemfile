@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'jekyll', '~> 3.0.0.pre.beta8'
+gem 'jekyll'
 gem 'nokogiri'
 gem 'rinku'
 gem 'rake'
