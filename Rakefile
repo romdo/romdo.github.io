@@ -6,6 +6,7 @@ require 'fileutils'
 
 require 'nokogiri'
 require 'rinku'
+require 'filesize'
 
 desc "run \"jekyll serve\""
 task :serve do
@@ -61,7 +62,8 @@ slug: "#{slug}"
 link: "#{link}"
 duration: "#{item.at_css("itunes|duration").text}"
 media_url: "#{enclosure[:url]}"
-media_size: "#{enclosure[:length]}"
+media_size: "#{Filesize.new(enclosure[:length], Filesize::SI).pretty}"
+media_size_bytes: "#{enclosure[:length]}"
 image_url: "#{item.at_css("itunes|image")[:href]}"
 ---
 #{Rinku.auto_link(description.gsub("\n", "<br />\n"))}
