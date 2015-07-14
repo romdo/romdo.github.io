@@ -1,4 +1,6 @@
 ---
 layout: default
 ---
-<div class="episode-list" id="episode_list"></div>
+<div class="episode-list" id="episode_list">
+  {% include episodes.html episodes=site.posts mode="list" %}
+</div>
