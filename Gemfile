@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'jekyll'
+gem 'github-pages'
 gem 'nokogiri'
 gem 'rinku'
 gem 'rake'
