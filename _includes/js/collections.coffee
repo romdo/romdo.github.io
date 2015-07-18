@@ -1,51 +1,69 @@
-class Episodes extends Backbone.Collection
-  model: Episode
-  url: window.rssPath
+class Pages extends Backbone.Collection
+  model: Page
+  url: "/index.html"
 
-  comparator: (a, b) ->
-    if a.get("pubDateMoment").isAfter(b.get("pubDateMoment"))
-      -1
-    else if a.get("pubDateMoment").isBefore(b.get("pubDateMoment"))
-      1
-    else if a.get("pubDateMoment").isSame(b.get("pubDateMoment"))
-      0
+  initialize: (options) =>
+    @url = options.url if options?.url
+
+  comparator: (model) ->
+    model.get("index")
 
   fetch: (options) =>
     options ||= {}
-    options.dataType = 'xml'
+    options.dataType = 'html'
     Backbone.Collection.prototype.fetch.call(this, options)
+
+  fetchSpecific: (url, options) =>
+    originalSuccess = options?.success
+
+    success = (collection) =>
+      collection.each (page) =>
+        existing = @get(page.id)
+        if !existing
+          @add(page)
+        else
+          existing.set(index: page.get("index"))
+
+      # Manually trigger a sort in case we've changed the existing models'
+      # index value.
+      @sort()
+
+      if originalSuccess && typeof originalSuccess == "function"
+        originalSuccess(arguments)
+
+    fetcher = new @constructor(url: url)
+    fetcher.fetch(_.extend({}, options, {success: success}))
+
+  fetchMissing: (options) =>
+    @fetchSpecific(@url, options)
 
   parse: (data) =>
     parsed = []
-    $(data).find('item').each (_, elm) => parsed.push(@_parseItem(elm))
+    $(data).find('.page').each (i, elm) =>
+      parsed.push(@_parseItem(elm, i))
+
     parsed
 
-  _parseItem: (elm) ->
+  parseElm: (elm) =>
+    parsed = []
+
+    $(elm).find('.page').each (i, elm) =>
+      parsed.push(@_parseItem(elm, i))
+
+    @set(parsed)
+
+  _parseItem: (elm, index) ->
     elm = $(elm)
 
-    guidFull  = elm.find('guid').text()
-    guid      = guidFull.replace(/^.*\:tracks\/(\d+)$/, "$1")
-    link      = elm.find("link").text()
-    slug      = link.replace(/.*\/(.+?)$/, "$1")
-    pubDate   = elm.find("pubDate").text()
-    enclosure = elm.find("enclosure")
-
-    pubDateFormat = "D MMM YYYY HH:mm:ss ZZ"
-    pubDateMoment = moment(pubDate, pubDateFormat)
+    id = elm.data("pageUrl")
+    id = id[1..-1] if id[0..0] == "/"
 
     {
-      id: slug
-      guid: guid
-      title: elm.find("title").text()
-      pubDate: pubDate
-      pubDateMoment: pubDateMoment
-      slug: slug
-      link: link
-      duration: elm.find("duration").text()
-      summary: elm.find("summary").text()
-      subtitle: elm.find("subtitle").text()
-      description: elm.find("description").text()
-      image_url: elm.find("image").attr("href")
-      media_url: enclosure.attr("url")
-      media_length: enclosure.attr("length")
+      id: id
+      elm: elm
+      index: index + 1
     }
+
+  indexDebug: =>
+    @each (page) ->
+      console.log "#{page.get('index')}: #{page.id}"

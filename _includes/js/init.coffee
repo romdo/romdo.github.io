@@ -1,8 +1,11 @@
-# e = new Episodes()
-# console.log "url", e.url
-# e.fetch()
-# console.log(e)
-
 $ ->
-  window.Router = new Routes()
-  Backbone.history.start()
+  window.router = new Routes()
+
+  Backbone.history.start
+    root: "/"
+    pushState: true
+    hashState: false
+
+  $("#home-link").on "click", (evt) ->
+    evt.preventDefault()
+    router.navigate("/", trigger: true)
