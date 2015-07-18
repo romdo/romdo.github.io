@@ -109,9 +109,11 @@ class PageView extends Backbone.View
 
   focussed: =>
     @expandDescription()
+    $("head title").text(@model.get("title"))
     window.scrollTo(0, 0)
 
   unfocussed: =>
+    $("head title").text("romdo")
     @collapseDescription()
 
   expandDescription: =>

@@ -60,6 +60,7 @@ class Pages extends Backbone.Collection
 
     {
       id: id
+      title: $.trim(elm.find(".title").text())
       elm: elm
       index: index + 1
     }
