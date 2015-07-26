@@ -66,12 +66,16 @@ media_size: "#{Filesize.new(enclosure[:length], Filesize::SI).pretty}"
 media_size_bytes: "#{enclosure[:length]}"
 image_url: "#{item.at_css("itunes|image")[:href]}"
 ---
-#{Rinku.auto_link(description.gsub("\n", "<br />\n"))}
+#{auto_link(description.gsub("\n", "<br />\n"))}
 HD
 
   puts "   #{file}"
   FileUtils.mkdir_p(File.dirname(file))
   File.open(file, "w") { |f| f.write(content) }
+end
+
+def auto_link(str)
+  Rinku.auto_link(str) { |url| url.gsub(/^https?\:\/\//i, "") }
 end
 
 def http_get(url, params = {}, options = {})
