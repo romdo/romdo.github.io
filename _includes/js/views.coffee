@@ -18,9 +18,10 @@ class PageContentView extends Backbone.View
     if @firstAction
       @fetchedAll  = true
       @currentPage = "/"
-      @firstAction = false
 
-    return if @currentPage == "/"
+    if @currentPage == "/"
+      @firstAction = false
+      return
 
     showAll = =>
       for child in @children
@@ -31,6 +32,7 @@ class PageContentView extends Backbone.View
             child.appendTo(@$el)
         else
           child.unfocussed()
+      window.scrollTo(0, 0) unless @firstAction
 
       @currentPage = "/"
 
@@ -39,6 +41,8 @@ class PageContentView extends Backbone.View
       @fetchedAll = true
     else
       showAll()
+
+    @firstAction = false
 
   showPage: (url) =>
     showView = =>
@@ -50,6 +54,8 @@ class PageContentView extends Backbone.View
         else
           child.remove()
           child.unfocussed()
+      window.scrollTo(0, 0) unless @firstAction
+
 
     if @currentPage != url
       if !@collection.get(url)
@@ -110,7 +116,6 @@ class PageView extends Backbone.View
   focussed: =>
     @expandDescription()
     $("head title").text(@model.get("title"))
-    window.scrollTo(0, 0)
 
   unfocussed: =>
     $("head title").text("romdo")
