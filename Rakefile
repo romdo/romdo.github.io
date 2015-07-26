@@ -7,6 +7,7 @@ require 'fileutils'
 require 'nokogiri'
 require 'rinku'
 require 'filesize'
+require 'active_support/core_ext/integer'
 
 desc "run \"jekyll serve\""
 task :serve do
@@ -56,7 +57,8 @@ def create_post(item)
 ---
 layout: post
 title: "#{item.at_css("title").text}"
-date: "#{Time.parse(pub_date).strftime("%Y-%m-%d %H:%M:%S %z")}"
+date: "#{date.strftime("%Y-%m-%d %H:%M:%S %z")}"
+pretty_date: "#{date.strftime("%B #{date.day.ordinalize}, %Y")}"
 guid: "#{File.basename(item.at_css("guid").text)}"
 slug: "#{slug}"
 link: "#{link}"
