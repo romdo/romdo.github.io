@@ -185,6 +185,14 @@
         display: block !important;
       }
     }
+    .divider {
+      display: block;
+    }
+  }
+  &.in-list:last-child {
+    .divider {
+      display: none;
+    }
   }
   .description-wrapper {
     margin-top: 5px;
@@ -223,6 +231,41 @@
       .less {
         display: none;
       }
+    }
+  }
+  .divider {
+    display: none;
+    margin-top: 32px;
+    position: relative;
+    height: 21px;
+    text-align: center;
+
+    .icon {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+    }
+    .fa {
+      color: #bfbfbf;
+      background: $background-color;
+      padding: 0px 5px;
+    }
+    .line {
+      opacity: 0.25;
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      top: 50%;
+      @include transform(translate(0%, -50%));
+      background: rgba(0,0,0,0);
+      background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0)), color-stop(50%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,0)));
+      background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+      background: -o-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+      background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+      background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
     }
   }
 }
