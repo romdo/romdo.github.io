@@ -7,7 +7,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 hostname: romdo.io # used to determine if google analytics should be triggered
 url: http://romdo.io # the base hostname & protocol for your site
 permalink: /:title/
-rss_url: http://feeds.soundcloud.com/users/soundcloud:users:157921153/sounds.rss
+rss_url: https://feeds.soundcloud.com/users/soundcloud:users:157921153/sounds.rss
 itunes_url: https://itunes.apple.com/gb/podcast/romdo/id1016355022?mt=2
 youtube_url: https://www.youtube.com/channel/UCzl-VC7Cnkx03aqJWSOSnsg
 medium_url: https://medium.com/romdo-the-blog
