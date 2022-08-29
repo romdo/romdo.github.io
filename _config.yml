@@ -1,19 +1,18 @@
 # Site settings
 title: romdo
-email: contact@romdo.io
+email: hello@romdo.io
 description: > # this means to ignore newlines until "baseurl:"
   A podcast about gaming & technology by a bunch of crazy programmers/gamers.
 baseurl: "" # the subpath of your site, e.g. /blog/
 hostname: romdo.io # used to determine if google analytics should be triggered
-url: http://romdo.io # the base hostname & protocol for your site
+url: https://romdo.io # the base hostname & protocol for your site
 permalink: /:title/
-rss_url: https://feeds.soundcloud.com/users/soundcloud:users:157921153/sounds.rss
+rss_url: https://romdo.io/podcast.rss
 itunes_url: https://itunes.apple.com/gb/podcast/romdo/id1016355022?mt=2
 youtube_url: https://www.youtube.com/channel/UCzl-VC7Cnkx03aqJWSOSnsg
 medium_url: https://medium.com/romdo-the-blog
 twitter_username: romdo_io
-github_username: romdo-io
-soundcloud_username: romdo-io
+github_username: romdo
 
 # Build settings
 markdown: kramdown

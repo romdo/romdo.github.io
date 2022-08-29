@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<rss
+  version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+>
+  <channel>
+    <atom:link
+      href="{{ site.url }}/podcast.rss"
+      rel="self"
+      type="application/rss+xml"
+    />
+    <title>romdo</title>
+    <link>{{ site.url }}</link>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <ttl>60</ttl>
+    <language>en</language>
+    <description>{{ site.description | escape }}</description>
+    <itunes:subtitle>{{ site.description | escape }}</itunes:subtitle>
+    <itunes:owner>
+      <itunes:name>romdo</itunes:name>
+      <itunes:email>{{ site.email }}</itunes:email>
+    </itunes:owner>
+    <itunes:author>romdo</itunes:author>
+    <itunes:explicit>yes</itunes:explicit>
+    <itunes:image href="https://podcast-media.romdo.io/romdo-io-avatar.png" />
+    <image>
+      <url>https://podcast-media.romdo.io/romdo-io-avatar.png</url>
+      <title>romdo</title>
+      <link>{{ site.url }}</link>
+    </image>
+    <itunes:category text="Leisure" />
+    {% for episode in include.episodes %}
+    <item>
+      <guid isPermaLink="false">{{ episode.guid }}</guid>
+      <title>{{ episode.title | escape }}</title>
+      <link>{{ episode.url | prepend: site.baseurl }}</link>
+      <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
+      <itunes:duration>{{ episode.duration }}</itunes:duration>
+      <itunes:author>romdo</itunes:author>
+      <itunes:explicit>yes</itunes:explicit>
+      <itunes:subtitle>{{ episode.summary | escape }}</itunes:subtitle>
+      <itunes:summary>{{ episode.summary | escape }}
+
+{{ episode.plain_text | escape }}</itunes:summary>
+      <description>{{ episode.summary | escape }}
+
+{{ episode.plain_text | escape }}</description>
+      <enclosure
+        url="{{ episode.media_url }}"
+        length="{{ episode.media_size_bytes }}"
+        type="audio/mpeg"
+      />
+      <itunes:image href="{{ episode.image_url }}" />
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
