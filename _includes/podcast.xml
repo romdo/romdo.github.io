@@ -35,7 +35,7 @@
     <item>
       <guid isPermaLink="false">{{ episode.guid }}</guid>
       <title>{{ episode.title | escape }}</title>
-      <link>{{ episode.url | prepend: site.baseurl }}</link>
+      <link>{{ site.url }}{{ episode.url | prepend: site.baseurl }}</link>
       <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
       <itunes:duration>{{ episode.duration }}</itunes:duration>
       <itunes:author>romdo</itunes:author>
