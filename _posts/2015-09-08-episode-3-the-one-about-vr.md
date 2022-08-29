@@ -3,7 +3,7 @@ layout: post
 title: "Episode 3: The One About VR"
 date: "2015-09-08 07:28:25 +0000"
 pretty_date: "September 8th, 2015"
-guid: "222874339"
+guid: "tag:soundcloud,2010:tracks/222874339"
 slug: "episode-3-the-one-about-vr"
 duration: "01:09:28"
 media_url: "https://podcast-media.romdo.io/romdo-io-episode-3-the-one-about-vr.mp3"

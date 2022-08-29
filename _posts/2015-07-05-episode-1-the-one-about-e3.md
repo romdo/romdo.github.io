@@ -3,7 +3,7 @@ layout: post
 title: "Episode 1: The One About E3"
 date: "2015-07-05 22:43:05 +0000"
 pretty_date: "July 5th, 2015"
-guid: "93645820-01b7-4542-a928-d64e3a767e52"
+guid: "tag:soundcloud,2010:tracks/213406691"
 slug: "episode-1-the-one-about-e3"
 duration: "01:52:19"
 media_url: "https://podcast-media.romdo.io/romdo-io-episode-1-the-one-about-e3.mp3"

@@ -3,7 +3,7 @@ layout: post
 title: "Sidequest 1: The Witcher 3: Wild Hunt"
 date: "2015-11-16 14:26:24 +0000"
 pretty_date: "November 16th, 2015"
-guid: "233303789"
+guid: "tag:soundcloud,2010:tracks/233303789"
 slug: "sidequest-1-the-witcher-3"
 duration: "00:55:18"
 media_url: "https://podcast-media.romdo.io/romdo-io-sidequest-1-the-witcher-3.mp3"

@@ -3,7 +3,7 @@ layout: post
 title: "Episode 4: The One About MMOs"
 date: "2016-04-28 16:15:39 +0000"
 pretty_date: "April 28th, 2016"
-guid: "261348745"
+guid: "tag:soundcloud,2010:tracks/261348745"
 slug: "episode-4-the-one-about-mmos"
 duration: "01:51:41"
 media_url: "https://podcast-media.romdo.io/romdo-io-episode-4-the-one-about-mmos.mp3"

@@ -3,7 +3,7 @@ layout: post
 title: "Episode 2: The One About FAIL"
 date: "2015-07-26 20:26:59 +0000"
 pretty_date: "July 26th, 2015"
-guid: "216457314"
+guid: "tag:soundcloud,2010:tracks/216457314"
 slug: "episode-2-the-one-about-fail"
 link: "https://soundcloud.com/romdo-io/episode-2-the-one-about-fail"
 duration: "01:02:43"

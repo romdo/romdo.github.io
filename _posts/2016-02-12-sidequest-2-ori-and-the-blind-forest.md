@@ -3,7 +3,7 @@ layout: post
 title: "Sidequest 2: Ori and the Blind Forest"
 date: "2016-02-12 13:56:56 +0000"
 pretty_date: "February 12th, 2016"
-guid: "246691375"
+guid: "tag:soundcloud,2010:tracks/246691375"
 slug: "sidequest-2-ori-and-the-blind-forest"
 duration: "00:49:38"
 media_url: "https://podcast-media.romdo.io/romdo-io-sidequest-2-ori-and-the-blind-forest.mp3"
